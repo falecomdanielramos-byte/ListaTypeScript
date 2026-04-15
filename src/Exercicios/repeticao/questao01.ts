@@ -3,7 +3,8 @@
 //  Soma total
 
 
-let soma = 0,quanti = 0
+let soma: number = 0
+let quanti: number = 0
 
 
 while(true){
