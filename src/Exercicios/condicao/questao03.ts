@@ -5,7 +5,7 @@
 // 4 - Divisão
 // Use switch...Case
 
-let mensagem:number;
+let mensagem:number=0;
 let nu1:number = Number(prompt("Informe um numero: "))
 let nu2:number = Number(prompt("Iforme outro numero: "))
 
@@ -30,4 +30,4 @@ switch (op){
         mensagem = nu1 / nu2;
     break;
 }
-console.log(mensagem);
+console.log(`${mensagem}`);
