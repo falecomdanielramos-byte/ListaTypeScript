@@ -5,9 +5,10 @@
 // 4 - Divisão
 // Use switch...Case
 
+
 let mensagem:number=0;
 let nu1:number = Number(prompt("Informe um numero: "))
-let nu2:number = Number(prompt("Iforme outro numero: "))
+let nu2:number = Number(prompt("Informe outro numero: "))
 
 
 let op:string = String(prompt("Informe a operação: soma,subtração,multiplicação,divisão")).toLowerCase()
