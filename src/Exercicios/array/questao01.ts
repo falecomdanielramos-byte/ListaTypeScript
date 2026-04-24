@@ -3,7 +3,7 @@
 // b) Números ímpares
 // c) Todos os múltiplos de 2,3 e 4
 // d) Lista reversa
-function lista1 (){
+export function questao01(){
 
 let lista:number  [] = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 let Npar:number [] = lista.filter(n => n%2 === 0)

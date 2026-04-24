@@ -5,16 +5,17 @@
 
 let soma = 0,quanti = 0
 
+export function questao01():void{
+    while(true){
+            let numero:number = Number(prompt("Informe os números {0 para sair}"))
 
-while(true){
-        let numero:number = Number(prompt("Informe os números {0 para sair}"))
+            if(numero == 0){
+                break
+            }
 
-        if(numero == 0){
-            break
-        }
-
-        quanti++
-        soma = soma + numero
+            quanti++
+            soma = soma + numero
+    }
+    window.alert(`A Quantidade dos números foi: ${quanti}`)
+    window.alert(`A Soma dos números foi: ${soma}`)
 }
-console.log(`A Quantidade dos números foi: ${quanti}`)
-console.log(`A Soma dos números foi: ${soma}`)

@@ -3,17 +3,17 @@
 //  Positivo ou Negativo
 
 
-function digito(){
+export function questao01():void{
     let numero:number = Number(prompt("Informe um numero: "))
 
     if(numero%2 == 0){
-        console.log("Esse numero e Par: "+numero)
+        window.alert(`Esse numero: ${numero} e Par`)
 }else{
-    console.log("Esse numero e Impar: "+numero)
+    window.alert(`Esse numero: ${numero} e Impar`)
 }
 if(numero > 0){
-    console.log("O numero e positivo: "+numero)
+    window.alert(`O numero: ${numero} e Positivo`)
 }else{
-    console.log("O numero e negativo: "+numero)
+    window.alert(`O numero: ${numero} e negativo`)
 }
 }

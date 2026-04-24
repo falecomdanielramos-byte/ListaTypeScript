@@ -4,15 +4,15 @@
 // ● ‘Segundo maior’, caso o segundo seja maior que o primeiro.
 
 
-function numero(){
+export function questao04(){
     let nu1:number = Number(prompt("Informe o primeiro número: "))
     let nu2:number = Number(prompt("Informe o segundo número: "))
 
     if(nu1 == nu2){
-        console.log(`Os números são iguais. ${nu1} = ${nu2}`)
+        window.alert(`Os números são iguais. ${nu1} = ${nu2}`)
     }else if(nu1 > nu2){
-        console.log(`O Primeiro é maior. ${nu1} Maior que: ${nu2}`)
+        window.alert(`O Primeiro é maior. ${nu1} Maior que: ${nu2}`)
     }else{
-        console.log(`O segundo é maior. ${nu2} maior que ${nu1}`)
+        window.alert(`O segundo é maior. ${nu2} maior que ${nu1}`)
     }
 }
