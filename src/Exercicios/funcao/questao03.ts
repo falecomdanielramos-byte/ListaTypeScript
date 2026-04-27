@@ -5,11 +5,19 @@
 // **
 // ***
 
+
+export function questao03(){
 let num:number = Number(prompt("Informe um numero para fazer os aninhados: "))
 
 function numero(){
-    for(let i:number=0;i = num;i++){
-        let anin = "*"+i
+    for(let i:number=1;i <= num;i++){
+        let anin:string = ""
+
+        for(let j:number=1;j <= i;j++){
+            anin += "*"
+        }
         console.log(anin)
     }
+}
+numero()
 }

@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/falecomdanielramos-byte/ListaTypeScript#readme",
   "devDependencies": {
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   }
 }
