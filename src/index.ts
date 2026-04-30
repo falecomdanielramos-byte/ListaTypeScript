@@ -13,6 +13,7 @@ import { questao05 as quest5R } from "./Exercicios/repeticao/questao05.js";
 
 // Função
 import { questao01 as quest1F } from "./Exercicios/funcao/questao01.js";
+import { questao02 as quest2F } from "./Exercicios/funcao/questao02.js";
 import { questao03 as quest3F } from "./Exercicios/funcao/questao03.js";
 
 
@@ -37,7 +38,8 @@ document.getElementById("bt9")?.addEventListener("click", quest5R )
 
 //Funçâo
 document.getElementById("bt10")?.addEventListener("click", quest1F )
-document.getElementById("bt13")?.addEventListener("click", quest3F )
+document.getElementById("bt11")?.addEventListener("click", quest2F )
+document.getElementById("bt12")?.addEventListener("click", quest3F )
 
 //Array
-document.getElementById("bt11")?.addEventListener("click", quest1A )
+document.getElementById("bt13")?.addEventListener("click", quest1A )
