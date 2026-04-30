@@ -4,7 +4,7 @@
 // ● ‘Segundo maior’, caso o segundo seja maior que o primeiro.
 
 
-export function questao04(){
+export function questao04():void{
     let nu1:number = Number(prompt("Informe o primeiro número: "))
     let nu2:number = Number(prompt("Informe o segundo número: "))
 

@@ -1,6 +1,6 @@
 // 2. Desenvolva a tabuada de um número usando for.
 
-export function questao02(){
+export function questao02():void{
     let nu:number=Number(prompt("Informe um número: "))
     let op:number=Number(prompt("Informe a operação: 1-Soma;2-subração;3-múltiplicoção;4-divisão. "))
 
