@@ -10,7 +10,7 @@ export function questao04():void{
 
         while(valor != valor){
 
-            if(valor)
+            if(valor ){}
 
         }
     }
