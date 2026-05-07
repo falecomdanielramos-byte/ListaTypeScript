@@ -8,7 +8,7 @@ export function questao04():void{
     function saque(){
         let valor:number = Number(prompt("Informe um valor: ")) 
 
-        while(valor != valor){
+        while(true){
 
             if(valor ){}
 
