@@ -2,7 +2,7 @@
 //  Atributos: Cor, circunferência, material
 //  Métodos: trocaCor e mostraCor
 
-
+export function questao01P():void{
 
 class Bola {
 
@@ -20,18 +20,16 @@ class Bola {
         this.material=matria
     }
 
-    trocarCor(){
-        console.log(``)
+    MudarCor(NovaCor:string):void{
+        NovaCor=String(prompt("Informe a nova cor: "))
+        this.cor=NovaCor
     }
-    MostraCor(cor){
-        console.log(`A cor da bola é:${cor}`)
+
+
+    MostraCor():void{
+        window.alert(`Nova cor é: ${this.cor}`)
     }
 }
 
-let novabola:Bola= new Bola()
 
-let lista:Bola[] = []
-
-let cor:string=String(prompt("Informe a cor da bola: "))
-
-lista.push(cor)
+}
