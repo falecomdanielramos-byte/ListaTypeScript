@@ -3,7 +3,7 @@
 // valor -1 é utilizado como sentinela para fim de leitura.
 
 
-export function questao04():void{
+export function questao04R():void{
 
     let x:number=Number(prompt("Informe a um numero: (-1 para Fechar)"))
 

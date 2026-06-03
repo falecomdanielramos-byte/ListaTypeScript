@@ -3,7 +3,7 @@
 // para ir subtraindo do valor total.
 
 
-export function questao04():void{
+export function questao04F():void{
 
     function saque(){
         let valor:number = Number(prompt("Informe um valor: ")) 

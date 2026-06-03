@@ -1,29 +1,30 @@
 // Condicional
-import { questao01 as quest1 } from "./Exercicios/condicao/questao01C.js";
-import { questao02 as quest2 } from "./Exercicios/condicao/questao02C.js";
-import { questao03 as quest3 } from "./Exercicios/condicao/questao03C.js";
-import { questao04 as quest4 } from "./Exercicios/condicao/questao04C.js";
+import { questao01C as quest1 } from "./Exercicios/condicao/questao01C.js";
+import { questao02C as quest2 } from "./Exercicios/condicao/questao02C.js";
+import { questao03C as quest3 } from "./Exercicios/condicao/questao03C.js";
+import { questao04C as quest4 } from "./Exercicios/condicao/questao04C.js";
 
 // Repetição
-import { questao01 as quest1R } from "./Exercicios/repeticao/questao01R.js";
-import { questao02 as quest2R } from "./Exercicios/repeticao/questao02R.js";
-import { questao03 as quest3R } from "./Exercicios/repeticao/questao03R.js";
-import { questao04 as quest4R } from "./Exercicios/repeticao/questao04R.js";
-import { questao05 as quest5R } from "./Exercicios/repeticao/questao05R.js";
+import { questao01R as quest1R } from "./Exercicios/repeticao/questao01R.js";
+import { questao02R as quest2R } from "./Exercicios/repeticao/questao02R.js";
+import { questao03R as quest3R } from "./Exercicios/repeticao/questao03R.js";
+import { questao04R as quest4R } from "./Exercicios/repeticao/questao04R.js";
+import { questao05R as quest5R } from "./Exercicios/repeticao/questao05R.js";
 
 // Função
-import { questao01 as quest1F } from "./Exercicios/funcao/questao01F.js";
-import { questao02 as quest2F } from "./Exercicios/funcao/questao02F.js";
-import { questao03 as quest3F } from "./Exercicios/funcao/questao03F.js";
+import { questao01F as quest1F } from "./Exercicios/funcao/questao01F.js";
+import { questao02F as quest2F } from "./Exercicios/funcao/questao02F.js";
+import { questao03F as quest3F } from "./Exercicios/funcao/questao03F.js";
 
 
 //Array
-import { questao01 as quest1A } from "./Exercicios/array/questao01A.js";
+import { questao01A as quest1A } from "./Exercicios/array/questao01A.js";
 
 
 //POO
 import { questao01P as quest1P } from "./Exercicios/POO/questao01P.js";
 import { questao02P as quest2P } from "./Exercicios/POO/questao02P.js";
+import { questao03P as quest3P } from "./Exercicios/POO/questao03P.js";
 
 
 //Extra
@@ -55,6 +56,7 @@ document.getElementById("bt13")?.addEventListener("click", quest1A )
 //POO
 document.getElementById("bt23")?.addEventListener("click",quest1P)
 document.getElementById("bt24")?.addEventListener("click",quest2P)
+document.getElementById("bt25")?.addEventListener("click",quest3P)
 
 
 //Questão extra

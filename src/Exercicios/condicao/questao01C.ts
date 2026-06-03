@@ -3,7 +3,7 @@
 //  Positivo ou Negativo
 
 
-export function questao01():void{
+export function questao01C():void{
     let numero:number = Number(prompt("Informe um numero: "))
 
     if(numero%2 == 0){

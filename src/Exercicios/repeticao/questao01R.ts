@@ -5,7 +5,7 @@
 
 let soma = 0,quanti = 0
 
-export function questao01():void{
+export function questao01R():void{
     while(true){
             let numero:number = Number(prompt("Informe os números {0 para sair}"))
 

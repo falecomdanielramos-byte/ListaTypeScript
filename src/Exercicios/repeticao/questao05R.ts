@@ -15,7 +15,7 @@
 
 
 
-export function questao05():void{
+export function questao05R():void{
 
 let MaiorVal:number=0,soma:number=0,contOuro:number=0
 

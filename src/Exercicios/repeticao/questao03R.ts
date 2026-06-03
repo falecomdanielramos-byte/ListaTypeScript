@@ -7,7 +7,7 @@
 // ● O número de funcionários do sexo masculino e feminino cadastrado;
 // ● O percentual de funcionários homens e mulheres cadastrados.
 
-export function questao03():void{
+export function questao03R():void{
     let op:number = Number(prompt("Quer iniciar o Programa? (-1 Para Fechar)"))
 
 

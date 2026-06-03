@@ -14,7 +14,7 @@
 // o Se status_alerta for False, imprime &quot;Temperatura dentro da faixa normal.&quot;.
 
 
-export function questao02():void{
+export function questao02F():void{
 
 
 

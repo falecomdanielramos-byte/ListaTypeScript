@@ -5,7 +5,7 @@
 // 4 - Divisão
 // Use switch...Case
 
-export function questao03():void{
+export function questao03C():void{
     let mensagem:number=0;
     let nu1:number = Number(prompt("Informe um numero: "))
     let nu2:number = Number(prompt("Informe outro numero: "))

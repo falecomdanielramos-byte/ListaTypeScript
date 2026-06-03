@@ -2,7 +2,7 @@
 // para calcular a soma de todos os números de 1 até o número fornecido. (Ex: somarAte(4)
 // deve retornar 10, pois 1+2+3+4 = 10).
 
-export function questao01():void{
+export function questao01F():void{
 
     
     let nu:number=Number(prompt("Informe um número: "))

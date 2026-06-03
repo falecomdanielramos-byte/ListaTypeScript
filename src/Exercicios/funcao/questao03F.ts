@@ -6,7 +6,7 @@
 // ***
 
 
-export function questao03():void{
+export function questao03F():void{
 let num:number = Number(prompt("Informe um numero para fazer os aninhados: "))
 
 function numero(){
