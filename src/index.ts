@@ -22,7 +22,8 @@ import { questao01 as quest1A } from "./Exercicios/array/questao01A.js";
 
 
 //POO
-import { questao01P as questP } from "./Exercicios/POO/questao01P.js";
+import { questao01P as quest1P } from "./Exercicios/POO/questao01P.js";
+import { questao02P as quest2P } from "./Exercicios/POO/questao02P.js";
 
 
 //Extra
@@ -52,6 +53,9 @@ document.getElementById("bt12")?.addEventListener("click", quest3F )
 document.getElementById("bt13")?.addEventListener("click", quest1A )
 
 //POO
-document.getElementById("bt14")?.addEventListener("click",questP)
+document.getElementById("bt23")?.addEventListener("click",quest1P)
+document.getElementById("bt24")?.addEventListener("click",quest2P)
 
+
+//Questão extra
 document.getElementById("bt01Ex")?.addEventListener("click",attEx)

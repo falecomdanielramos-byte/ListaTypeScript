@@ -6,9 +6,9 @@ export function questao01P():void{
 
 class Bola {
 
-    cor:string
-    circunferencia:number
-    material:string
+    cor:string=String("vermelho")
+    circunferencia:number=Number(3500)
+    material:string=String("Latex")
 
     constructor(
         coloraçao:string,
@@ -21,7 +21,7 @@ class Bola {
     }
 
     MudarCor(NovaCor:string):void{
-        NovaCor=String(prompt("Informe a nova cor: "))
+        NovaCor="verde"
         this.cor=NovaCor
     }
 
@@ -29,7 +29,19 @@ class Bola {
     MostraCor():void{
         window.alert(`Nova cor é: ${this.cor}`)
     }
+    
+
 }
 
+let cor:string,circulo:number,matria:string
+
+
+cor=String("verde")
+circulo=Number(3500)
+matria=String("Latex")
+
+let novaBola:Bola = new Bola(cor,circulo,matria)
+
+novaBola.MostraCor()
 
 }
