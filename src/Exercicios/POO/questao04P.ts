@@ -12,6 +12,12 @@ constructor(B:number,A:number){
 this.Base=B
 this.Altura=A
 }
+calcularArea():void{
+	return this.Base*this.Altura
+}
+calcularPerimetro():void{
+	return 2*(this.Base+this.Altura)
+}
 
 Exigir():void{
 window.alert(`A `)
