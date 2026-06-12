@@ -18,7 +18,7 @@ class Conta {
     ){
         this.Numero_Conta=Nu
         this.Nome_Cnta=No
-        
+        this.Saldo
     }
 
     AlterarNome(NovoNome:string){
@@ -28,11 +28,32 @@ class Conta {
     Deposito(){}
     Saque(){}
 
+    Exibir():void{
+        window.alert()
+    }
+
 }
 
 let conta:number,nome:string,saldo:number
+let continuar = ""
 
+while(continuar === "S"|| continuar === "SIM"){
 conta = Number(prompt("Informe o número da conta: "))
 nome = String(prompt("Informe o nome do Correntista: "))
 saldo = Number(prompt("Informe o Saldo da conta: "))
+continuar = String(prompt("Quer continuar? S-Sim ou N-Não")).toLocaleUpperCase()
+
+let ListaConta = []
+let novaConta = new Conta (conta,nome)
+
+ListaConta.push(novaConta)
+
+for(let novaConta of ListaConta){
+
+}
+}
+
+
+
+
 
