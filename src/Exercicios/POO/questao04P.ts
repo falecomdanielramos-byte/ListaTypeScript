@@ -3,7 +3,7 @@
 //necessárias para o local.
 
 
-class retengulo{
+class Local{
 
 Base:number
 Altura:number
@@ -12,15 +12,24 @@ constructor(B:number,A:number){
 this.Base=B
 this.Altura=A
 }
-calcularArea():void{
-	return this.Base*this.Altura
-}
-calcularPerimetro():void{
-	return 2*(this.Base+this.Altura)
-}
+	calcularArea():number{
+		return this.Base*this.Altura
+	}
+	calcularPerimetro():number{
+		return 2*(this.Base+this.Altura)
+	}
 
-Exigir():void{
-window.alert(`A `)
-}
 
 }
+
+let Altura:number,Base:number
+
+Base= Number(prompt("Informe a base do local: "))
+Altura = Number(prompt("Informe a altura do local: "))
+
+
+let local = new Local(Base,Altura)
+
+
+window.alert(`A quantidade necessaria de pisos é: ${local.calcularArea()} `)
+window.alert(`A quantidade necessaria de rodapés é: ${local.calcularPerimetro()} `)
