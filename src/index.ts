@@ -25,6 +25,8 @@ import { questao01A as quest1A } from "./Exercicios/array/questao01A.js";
 import { questao01P as quest1P } from "./Exercicios/POO/questao01P.js";
 import { questao02P as quest2P } from "./Exercicios/POO/questao02P.js";
 import { questao03P as quest3P } from "./Exercicios/POO/questao03P.js";
+import { questao04P as quest4P } from "./Exercicios/POO/questao04P.js";
+import { questao05P as quest5P } from "./Exercicios/POO/questao05P.js";
 
 
 //Extra
@@ -57,6 +59,8 @@ document.getElementById("bt13")?.addEventListener("click", quest1A )
 document.getElementById("bt23")?.addEventListener("click",quest1P)
 document.getElementById("bt24")?.addEventListener("click",quest2P)
 document.getElementById("bt25")?.addEventListener("click",quest3P)
+document.getElementById("bt26")?.addEventListener("click",quest4P)
+document.getElementById("bt27")?.addEventListener("click",quest5P)
 
 
 //Questão extra

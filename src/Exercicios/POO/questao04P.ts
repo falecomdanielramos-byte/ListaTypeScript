@@ -2,7 +2,8 @@
 //local. Depois, deve criar um objeto com as medidas e calcular a quantidade de pisos e de rodapés
 //necessárias para o local.
 
-
+export function questao04P():void{
+	
 class Local{
 
 Base:number
@@ -33,3 +34,4 @@ let local = new Local(Base,Altura)
 
 window.alert(`A quantidade necessaria de pisos é: ${local.calcularArea()} `)
 window.alert(`A quantidade necessaria de rodapés é: ${local.calcularPerimetro()} `)
+}
