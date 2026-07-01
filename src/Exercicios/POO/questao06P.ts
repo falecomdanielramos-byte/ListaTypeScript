@@ -22,11 +22,17 @@ class Conta {
     }
 
     AlterarNome(NovoNome:string){
-
+        NovoNome = nome
+        this.Nome_Cnta = NovoNome
     }
     
-    Deposito(){}
-    Saque(){}
+    Deposito(NovoSaldo:number){
+        NovoSaldo = saldo
+        this.Saldo = NovoSaldo
+    }
+    Saque(RemoverSal:number){
+        RemoverSal = saldo
+    }
 
     Exibir():void{
         window.alert()
@@ -35,13 +41,18 @@ class Conta {
 }
 
 let conta:number,nome:string,saldo:number
-let continuar = ""
+let continuar = "",saquar:string,saque:number
 
 while(continuar === "S"|| continuar === "SIM"){
 conta = Number(prompt("Informe o número da conta: "))
 nome = String(prompt("Informe o nome do Correntista: "))
 saldo = Number(prompt("Informe o Saldo da conta: "))
 continuar = String(prompt("Quer continuar? S-Sim ou N-Não")).toLocaleUpperCase()
+saquer = String(prompt("Quer Saquer ? S-Sim ou N-Não: ")).toLocaleUpperCase
+
+if(saquar === "S"){
+    
+}
 
 let ListaConta = []
 let novaConta = new Conta (conta,nome)
