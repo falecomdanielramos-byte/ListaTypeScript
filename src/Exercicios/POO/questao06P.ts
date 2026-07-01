@@ -4,9 +4,9 @@
 // atributos são obrigatórios. Por fim, faça com que esse sistema interaja com o usuário permitido que
 // ele, depois de cadastrar as suas informações, possa usar os métodos disponíveis.
 
+export function questao06P():void{
 
 class Conta {
-
     Numero_Conta:number
     Nome_Cnta:string
     Saldo:number=0
@@ -14,53 +14,62 @@ class Conta {
     constructor(
         Nu:number,
         No:string,
-        
+        Sa:number
     ){
         this.Numero_Conta=Nu
         this.Nome_Cnta=No
+        this.Saldo=Sa
     }
 
     AlterarNome(NovoNome:string){
-        NovoNome = nome
+        NovoNome = N
         this.Nome_Cnta = NovoNome
     }
     
     Deposito(NovoSaldo:number){
-        NovoSaldo = saldo
+        NovoSaldo = Sa
         this.Saldo = NovoSaldo
     }
-    Saque(RemoverSal:number){
-        RemoverSal = saldo - saque
-        this.Saldo = RemoverSal
+    Saque(Sa:number){
+        return this.Saldo=this.Saldo-Sa
     }
 
     Exibir():void{
-        window.alert(`A Conta do Usúario: ${this.Nome_Cnta} | Possui o Numero: ${this.Numero_Conta} | Com o Saldo de: ${this.Saldo}`)
+        window.alert(`A Conta do Usúario: ${this.Nome_Cnta} | Possui o Numero: ${this.Numero_Conta} | Com o Saldo de: ${this.Saldo.toFixed(2)} R$`)
     }
 
 }
 
-let conta:number,nome:string,saldo:number
-let continuar = "",saquar:string,saque:number
+let C:number,N:string,S:number
+let continuar = "",saquar:string,Sa:number
 
-while(continuar === "S"|| continuar === "SIM"){
+while(continuar != "N"){
 
-conta = Number(prompt("Informe o número da conta: "))
-nome = String(prompt("Informe o nome do Correntista: "))
-saldo = Number(prompt("Informe o Saldo da conta: "))
-continuar = String(prompt("Quer continuar? S-Sim ou N-Não")).toLocaleUpperCase()
+C = Number(prompt("Informe o número da conta: "))
+N = String(prompt("Informe o nome do Correntista: "))
+S = Number(prompt("Informe o Saldo da conta: "))
+
+let ListaConta = []
+let novaConta = new Conta (C,N,S)
+
 saquar = String(prompt("Quer Saquer ? S-Sim ou N-Não: ")).toLocaleUpperCase()
 
 if(saquar === "S"){
-    saque = Number(prompt("Informe o Valor do saque: "))
+    Sa = Number(prompt("Informe o Valor do saque: "))
+    novaConta.Saque(Sa)
 }
 
-let ListaConta = []
-let novaConta = new Conta (conta,nome,)
+continuar = String(prompt("Quer continuar? S-Sim ou N-Não")).toLocaleUpperCase()
+
+
+
 
 ListaConta.push(novaConta)
 
 for(let novaConta of ListaConta){
-    novaConta.Exibir
+    novaConta.Exibir()
 }
+}
+
+
 }
