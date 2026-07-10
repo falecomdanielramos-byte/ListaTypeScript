@@ -61,9 +61,9 @@ class ProjetoVerde extends Projeto {
         super(tit,coor,nota)
     }
     public descricaoCategoria():void{
-        console.log(`Benvindo ao projeto verde , filho do projeto original`)
+        console.log(`Ben-vindo ao projeto verde , filho do projeto original`)
     }
-    public calculodeMedia(): number {
+    public calculodeMedia():number{
         let contador = 0,media=0,acum=0,op = 0
 
         op = Number(prompt("Informe um valor ou -1 para sair: "))
@@ -71,7 +71,6 @@ class ProjetoVerde extends Projeto {
             
         }
 
-        return
 
 
     }
@@ -82,68 +81,9 @@ class ProjetoCultural extends Projeto {
         super(tit,coor,nota)
     }
     public descricaoCategoria():void{
-        console.log(`Benvindo ao projeto cultural , filho do projeto original`)
+        console.log(`Ben-vindo ao projeto cultural , filho do projeto original`)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
