@@ -28,6 +28,7 @@ import { questao03P as quest3P } from "./Exercicios/POO/questao03P.js";
 import { questao04P as quest4P } from "./Exercicios/POO/questao04P.js";
 import { questao05P as quest5P } from "./Exercicios/POO/questao05P.js";
 import { questao06P as quest6P } from "./Exercicios/POO/questao06P.js";
+import { questao07P as quest7P } from "./Exercicios/POO/questao07P.js";
 
 import { questao31P as quest31P } from "./Exercicios/POO/questao31P.js";
 
@@ -65,6 +66,7 @@ document.getElementById("bt25")?.addEventListener("click",quest3P)
 document.getElementById("bt26")?.addEventListener("click",quest4P)
 document.getElementById("bt27")?.addEventListener("click",quest5P)
 document.getElementById("bt28")?.addEventListener("click",quest6P)
+document.getElementById("bt29")?.addEventListener("click",quest7P)
 
 document.getElementById("bt59")?.addEventListener("click",quest31P)
 
