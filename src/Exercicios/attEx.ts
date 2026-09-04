@@ -30,7 +30,9 @@ class Cliente{
 exibirResumo():void{
         window.alert(`O cliente: ${this.nome} | Possui o CPF: ${this.CPF} | Possui o email: ${this.email} | Possui o telefone: ${this.telefone} | Tem o Score: ${this.score}`)    
 }
+
 }
+
 let N:string,C:string,E:string,T:number,S:number
 let continuar=""
 
