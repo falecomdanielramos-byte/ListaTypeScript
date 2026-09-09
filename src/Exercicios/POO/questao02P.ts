@@ -3,35 +3,35 @@
 //  Métodos: Mudar valor do Lado,
 //  Retornar valor do Lado e calcular Área;
 
-export function questao02P():void{
+export function questao02P(): void {
 
     class Quadrado {
-        Tamanho_do_lado:number=35
-        base:number
+        Tamanho_do_lado: number = 35
+        base: number
 
-        constructor(T:number,B:number){
-            this.Tamanho_do_lado=T
-            this.base=B
+        constructor(T: number, B: number) {
+            this.Tamanho_do_lado = T
+            this.base = B
         }
-        MudarLado(Novolado:number):void{
-            Novolado=50
-            this.Tamanho_do_lado=Novolado
+        MudarLado(Novolado: number): void {
+            Novolado = 50
+            this.Tamanho_do_lado = Novolado
         }
 
-        exibirResumo():void{
-            window.alert(`O lado de Tamanho: ${this.Tamanho_do_lado} | a area calculada é: ${T*B}`)
+        exibirResumo(): void {
+            window.alert(`O lado de Tamanho: ${this.Tamanho_do_lado} | a area calculada é: ${T * B}`)
         }
 
     }
-    
-let T:number,B:number
 
-T=50
-B=30
+    let T: number, B: number
 
-let novoQuadrado = new Quadrado(T,B)
+    T = 50
+    B = 30
 
-novoQuadrado.exibirResumo()
+    let novoQuadrado = new Quadrado(T, B)
+
+    novoQuadrado.exibirResumo()
 
 
 }

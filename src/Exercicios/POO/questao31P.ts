@@ -14,76 +14,76 @@
 
 
 
-export function questao31P():void{
+export function questao31P(): void {
 
 
-abstract class Projeto{
+    abstract class Projeto {
 
 
-    private _titulo:string
-    private _coordenador:string
-    private _nota:number
+        private _titulo: string
+        private _coordenador: string
+        private _nota: number
 
-    constructor(
-        tit:string,
-        coor:string,
-        nota:number
-    ){
-        this._titulo=tit
-        this._coordenador=coor
-        this._nota=nota
+        constructor(
+            tit: string,
+            coor: string,
+            nota: number
+        ) {
+            this._titulo = tit
+            this._coordenador = coor
+            this._nota = nota
 
-    }
+        }
 
-    get nota():number{
-        return this._nota
-    }
-    set nota(valor:number){
-        if(valor >= 0 && valor <= 10){
-            this._nota=valor
-        }else(
-            console.log(`Valor inválido!!`)
-        )
-        
-    }
+        get nota(): number {
+            return this._nota
+        }
+        set nota(valor: number) {
+            if (valor >= 0 && valor <= 10) {
+                this._nota = valor
+            } else (
+                console.log(`Valor inválido!!`)
+            )
 
-
-
-abstract descricaoCategoria():void
-abstract calculodeMedia():number
-
-}
-
-
-class ProjetoVerde extends Projeto {
-
-    constructor(tit:string,coor:string,nota:number){
-        super(tit,coor,nota)
-    }
-    public descricaoCategoria():void{
-        console.log(`Ben-vindo ao projeto verde , filho do projeto original`)
-    }
-    public calculodeMedia():number{
-        let contador = 0,media=0,acum=0,op = 0
-
-        op = Number(prompt("Informe um valor ou -1 para sair: "))
-        while(op != 0){
-            
         }
 
 
 
-    }
-}
-class ProjetoCultural extends Projeto {
+        abstract descricaoCategoria(): void
+        abstract calculodeMedia(): number
 
-    constructor(tit:string,coor:string,nota:number){
-        super(tit,coor,nota)
     }
-    public descricaoCategoria():void{
-        console.log(`Ben-vindo ao projeto cultural , filho do projeto original`)
+
+
+    class ProjetoVerde extends Projeto {
+
+        constructor(tit: string, coor: string, nota: number) {
+            super(tit, coor, nota)
+        }
+        public descricaoCategoria(): void {
+            console.log(`Ben-vindo ao projeto verde , filho do projeto original`)
+        }
+        public calculodeMedia(): number {
+            let contador = 0, media = 0, acum = 0, op = 0
+
+            op = Number(prompt("Informe um valor ou -1 para sair: "))
+            while (op != 0) {
+
+            }
+
+
+
+        }
     }
-}
+    class ProjetoCultural extends Projeto {
+
+        constructor(tit: string, coor: string, nota: number) {
+            super(tit, coor, nota)
+        }
+        public descricaoCategoria(): void {
+            console.log(`Ben-vindo ao projeto cultural , filho do projeto original`)
+        }
+    }
 
 
 

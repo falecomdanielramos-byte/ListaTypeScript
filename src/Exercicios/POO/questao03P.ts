@@ -6,37 +6,37 @@
 //  Calcular Perímetro.
 
 
-export function questao03P():void{
+export function questao03P(): void {
 
-class Retangulo {
+    class Retangulo {
 
-    LadoA:number=100
-    LadoB:number=225
+        LadoA: number = 100
+        LadoB: number = 225
 
-    constructor(A:number,B:number){
-        this.LadoA=A
-        this.LadoB=B
+        constructor(A: number, B: number) {
+            this.LadoA = A
+            this.LadoB = B
+        }
+        Mudar(NovoA: number, NovoB: number): void {
+            NovoA = 500
+            this.LadoA = NovoA
+            NovoB = 30
+            this.LadoB = NovoB
+        }
+        Exibir(): void {
+            window.alert(`O Valor dos lados é: LadoA: ${this.LadoA} | LadoB: ${this.LadoB}`)
+            window.alert(`O calculo da area é: ${NovoA * NovoB}`)
+            window.alert(`O calculo do Perímetro é: ${(NovoA + NovoB) * 2}`)
+        }
     }
-    Mudar(NovoA:number,NovoB:number):void{
-        NovoA=500
-        this.LadoA=NovoA
-        NovoB=30
-        this.LadoB=NovoB
-    }
-    Exibir():void{
-        window.alert(`O Valor dos lados é: LadoA: ${this.LadoA} | LadoB: ${this.LadoB}`)
-        window.alert(`O calculo da area é: ${NovoA*NovoB}`)
-        window.alert(`O calculo do Perímetro é: ${(NovoA+NovoB)*2}`)
-    }
-}
-let NovoA:number,NovoB:number
+    let NovoA: number, NovoB: number
 
-NovoA=500
-NovoB=30
+    NovoA = 500
+    NovoB = 30
 
-let NovoRetangulo:Retangulo = new Retangulo(NovoA,NovoB)
+    let NovoRetangulo: Retangulo = new Retangulo(NovoA, NovoB)
 
-NovoRetangulo.Exibir()
+    NovoRetangulo.Exibir()
 
 
 }

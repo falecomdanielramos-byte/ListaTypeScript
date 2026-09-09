@@ -4,67 +4,67 @@
 
 
 
-export function questao07P():void{
+export function questao07P(): void {
 
 
-class Funcionario{
+    class Funcionario {
 
-    nome:string
-    cargo:string
-    percent:number
-    salario:number
+        nome: string
+        cargo: string
+        percent: number
+        salario: number
 
-    constructor(
-        No:string,
-        Ca:string,
-        Pc:number,
-        sal:number
-    ){
-        this.nome=No
-        this.cargo=Ca
-        this.percent=Pc
-        this.salario=sal
-        
+        constructor(
+            No: string,
+            Ca: string,
+            Pc: number,
+            sal: number
+        ) {
+            this.nome = No
+            this.cargo = Ca
+            this.percent = Pc
+            this.salario = sal
+
+        }
+
+
+        percentAL() {
+            let valorPerc: number = this.salario + (this.salario * this.percent) / 100
+            this.salario = valorPerc
+        }
+        Exibir(): void {
+            window.alert(`O funcionario: ${this.nome} |Possui um salario de: ${this.salario} | Possui cargo: ${this.cargo}`)
+        }
+
+
     }
 
+    let nome: string, cargo: string, percent: number, sala: number
+    let continuar = ""
+    let ListaFunc = []
 
-percentAL(){
-    let valorPerc:number = this.salario + (this.salario * this.percent)/100
-    this.salario = valorPerc
-}
-Exibir():void{
-    window.alert(`O funcionario: ${this.nome} |Possui um salario de: ${this.salario} | Possui cargo: ${this.cargo}`)
-}
+    continuar = String(prompt("Quer calcular o salario ? (S-Sim ou N-Não)")).toUpperCase()
+
+    while (continuar != "N") {
+
+        nome = String(prompt("Informe o nome do funcionario: "))
+        cargo = String(prompt("Informe o cargo do funcionario: "))
+        percent = Number(prompt("Informe o percentual do aumento: "))
+        sala = Number(prompt("Informe o salario do funcionario: "))
 
 
-}
 
-let nome:string,cargo:string,percent:number,sala:number
-let continuar = ""
-let ListaFunc = []
+        continuar = String(prompt("Deseja continuar ? (S-Sim ou N-Não)")).toUpperCase()
 
-continuar = String(prompt("Quer calcular o salario ? (S-Sim ou N-Não)")).toUpperCase()
+        let funcionario: Funcionario = new Funcionario(nome, cargo, percent, sala)
+        funcionario.percentAL()
 
-while(continuar != "N"){
+        ListaFunc.push(funcionario)
 
-    nome = String(prompt("Informe o nome do funcionario: "))
-    cargo = String(prompt("Informe o cargo do funcionario: "))
-    percent = Number(prompt("Informe o percentual do aumento: "))
-    sala = Number(prompt("Informe o salario do funcionario: "))
-
-    
-    
-    continuar = String(prompt("Deseja continuar ? (S-Sim ou N-Não)")).toUpperCase()
-
-    let funcionario:Funcionario = new Funcionario(nome,cargo,percent,sala)
-    funcionario.percentAL()
-
-    ListaFunc.push(funcionario)
-
-for(let funcionario of ListaFunc){
-    funcionario.Exibir()
-}
-}
+        for (let funcionario of ListaFunc) {
+            funcionario.Exibir()
+        }
+    }
 
 
 }
