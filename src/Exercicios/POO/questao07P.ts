@@ -29,7 +29,7 @@ class Funcionario{
 
 
 percentAL(){
-    let valorPerc:number = this.salario + (this.salario * percent)/100
+    let valorPerc:number = this.salario + (this.salario * this.percent)/100
     this.salario = valorPerc
 }
 Exibir():void{
@@ -41,6 +41,7 @@ Exibir():void{
 
 let nome:string,cargo:string,percent:number,sala:number
 let continuar = ""
+let ListaFunc = []
 
 continuar = String(prompt("Quer calcular o salario ? (S-Sim ou N-Não)")).toUpperCase()
 
@@ -51,7 +52,7 @@ while(continuar != "N"){
     percent = Number(prompt("Informe o percentual do aumento: "))
     sala = Number(prompt("Informe o salario do funcionario: "))
 
-    let ListaFunc = []
+    
     
     continuar = String(prompt("Deseja continuar ? (S-Sim ou N-Não)")).toUpperCase()
 
