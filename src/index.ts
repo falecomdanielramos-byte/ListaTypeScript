@@ -32,6 +32,7 @@ import { questao07P as quest7P } from "./Exercicios/POO/questao07P.js";
 import { questao08P as quest8P } from "./Exercicios/POO/questao08P.js";
 import { questao09P as quest9P } from "./Exercicios/POO/questao09P.js";
 import { questao10P as quest10P } from "./Exercicios/POO/questao10P.js";
+import { questao11P as quest11P } from "./Exercicios/POO/questao11P.js";
 
 import { questao31P as quest31P } from "./Exercicios/POO/questao31P.js";
 
@@ -73,6 +74,7 @@ document.getElementById("bt29")?.addEventListener("click",quest7P)
 document.getElementById("bt30")?.addEventListener("click",quest8P)
 document.getElementById("bt31")?.addEventListener("click",quest9P)
 document.getElementById("bt32")?.addEventListener("click",quest10P)
+document.getElementById("bt33")?.addEventListener("click",quest11P)
 
 document.getElementById("bt59")?.addEventListener("click",quest31P)
 
