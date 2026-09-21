@@ -4,67 +4,55 @@
 // total do aluguel e exiba o resumo da locação. Por fim, o sistema deve perguntar se deseja fazer uma
 // nova locação.
 
-export function quest12P():void{
-class Consecionaria{
+export function quest12P(): void {
+  class Consecionaria {
+    private _modelo_carro: string;
+    private _valor_diaria: number;
+    private _quant_dias: number;
 
-    private _modelo_carro:string
-    private _valor_diaria:number
-    private _quant_dias:number
-
-
-    constructor(
-        Mod_Ca:string,
-        Val_Di:number,
-        Quant_Di:number
-    ){
-        this._modelo_carro=Mod_Ca
-        this._valor_diaria=Val_Di
-        this._quant_dias=Quant_Di
+    constructor(Mod_Ca: string, Val_Di: number, Quant_Di: number) {
+      this._modelo_carro = Mod_Ca;
+      this._valor_diaria = Val_Di;
+      this._quant_dias = Quant_Di;
     }
 
-ExibirResu():void{
-    window.alert(`O cliente: ${this._modelo_carro} | Com o valor de: ${this._valor_diaria} a diaria | Por: ${this._quant_dias} dias`)
-}
+    ExibirResu(): void {
+        let total = this._valor_diaria * this._quant_dias
 
-get Mod():string{
-    return this._modelo_carro
-}
-set Mod(Mod:string){
-    this._modelo_carro = Mod
-}
+      window.alert(
+        `O cliente alugou um carro modelo: ${this._modelo_carro} | Com o valor de: ${this._valor_diaria} a diaria | Por: ${this._quant_dias} dias | Valor total: ${total}`,
+      );
+    }
 
-get Valor():number{
-    return this._valor_diaria
-}
-set Valor(Valor:number){
-    this._valor_diaria = Valor
-}
+    get Mod(): string {
+      return this._modelo_carro;
+    }
+    set Mod(Mod: string) {
+      this._modelo_carro = Mod;
+    }
 
+    get Valor(): number {
+      return this._valor_diaria;
+    }
+    set Valor(Valor: number) {
+      this._valor_diaria = Valor;
+    }
+  }
+  let Mod: string, Valor: number, Quant: number;
+  let op = "";
+  let ListaCarro: Consecionaria[] = [];
 
+  while (op != "N") {
+    Mod = String(prompt("Informe qual e o modelo do carro: "));
+    Valor = Number(prompt("Informe qual e o valor para alugar o carro: "));
+    Quant = Number(prompt("Informe quantos dias quer alugar o carro: "));
 
-
-}
-let Mod:string,Valor:number,Quant:number
-let op=""
-let ListaCarro:Consecionaria [] = []
-
-while(op != "N"){
-
-    Mod = String(prompt("Informe qual e o modelo do carro: "))
-    Valor = Number(prompt("Informe qual e o valor para alugar o carro: "))
-    Quant = Number(prompt("Informe quantos dias quer alugar o carro: "))
-
-    op = String(prompt("Deseja Alugar um novo carro? (S-Sim ou N-Não)")).toUpperCase()
-    let Cliente = new Consecionaria(Mod,Valor,Quant)
-    ListaCarro.push(Cliente)
-
-
-
-}
-for(let Cliente of ListaCarro){
-    Cliente.
-}
-
-
-
+    
+    let Cliente = new Consecionaria(Mod, Valor, Quant);
+    ListaCarro.push(Cliente);
+    op = String(prompt("Deseja Alugar um novo carro? (S-Sim ou N-Não)")).toUpperCase();
+  }
+  for (let Cliente of ListaCarro) {
+    Cliente.ExibirResu()
+  }
 }
