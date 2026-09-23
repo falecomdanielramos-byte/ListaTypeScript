@@ -25,6 +25,8 @@ export function questao15P(): void {
             this._ID = Id
         }
 
+        abstract Calcular():void
+
     }
 
 
