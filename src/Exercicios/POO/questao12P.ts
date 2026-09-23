@@ -4,7 +4,7 @@
 // total do aluguel e exiba o resumo da locação. Por fim, o sistema deve perguntar se deseja fazer uma
 // nova locação.
 
-export function quest12P(): void {
+export function questao12P(): void {
   class Consecionaria {
     private _modelo_carro: string;
     private _valor_diaria: number;

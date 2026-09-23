@@ -33,6 +33,10 @@ import { questao08P as quest8P } from "./Exercicios/POO/questao08P.js";
 import { questao09P as quest9P } from "./Exercicios/POO/questao09P.js";
 import { questao10P as quest10P } from "./Exercicios/POO/questao10P.js";
 import { questao11P as quest11P } from "./Exercicios/POO/questao11P.js";
+import { questao12P as quest12P } from "./Exercicios/POO/questao12P.js";
+import { questao13P as quest13P } from "./Exercicios/POO/questao13P.js";
+import { questao14P as quest14P } from "./Exercicios/POO/questao14P.js";
+import { questao15P as quest15P } from "./Exercicios/POO/questao15P.js";
 
 import { questao31P as quest31P } from "./Exercicios/POO/questao31P.js";
 
@@ -75,6 +79,10 @@ document.getElementById("bt30")?.addEventListener("click",quest8P)
 document.getElementById("bt31")?.addEventListener("click",quest9P)
 document.getElementById("bt32")?.addEventListener("click",quest10P)
 document.getElementById("bt33")?.addEventListener("click",quest11P)
+document.getElementById("bt34")?.addEventListener("click",quest12P)
+document.getElementById("bt35")?.addEventListener("click",quest13P)
+document.getElementById("bt36")?.addEventListener("click",quest14P)
+document.getElementById("bt37")?.addEventListener("click",quest15P)
 
 document.getElementById("bt59")?.addEventListener("click",quest31P)
 

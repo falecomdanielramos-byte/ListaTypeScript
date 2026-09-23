@@ -25,7 +25,8 @@ export function questao15P(): void {
             this._ID = Id
         }
 
-        abstract Calcular():void
+        abstract Calcular():any
+        abstract Exibir():void
 
     }
 
@@ -45,6 +46,12 @@ export function questao15P(): void {
 
         }
 
+        Calcular() {
+            
+        }
+        Exibir(): void {
+            
+        }
 
 
     }
@@ -61,6 +68,12 @@ export function questao15P(): void {
         ){
             super(Nome,Sal,Id)
             this.Mes=Mes
+        }
+        Calcular() {
+            
+        }
+        Exibir(): void {
+            
         }
     }
 
