@@ -10,24 +10,30 @@
 
 
 
- export function questao21P():void{
+export function questao21P(): void {
 
 
-class FloreSer {
-    titulo:string
-    coordendor:string
-    private _nota:number
+    abstract class FloreSer {
+        titulo: string
+        coordendor: string
+        private _nota: number
 
 
-    constructor(
-        Tit:string,
-        Coop:string,
-        No:number
+        constructor(
+            Tit: string,
+            Coop: string,
+            No: number
 
-    ){
-        this.titulo=Tit
-        this.coordendor=Coop
-        this._nota=No
+        ) {
+            this.titulo = Tit
+            this.coordendor = Coop
+            this._nota = No
+
+        }
+
+
+
+
 
     }
 
@@ -35,27 +41,21 @@ class FloreSer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- }
