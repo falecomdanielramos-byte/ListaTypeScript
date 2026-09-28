@@ -12,50 +12,125 @@
 
 export function questao21P(): void {
 
+    class Projeto {
 
-    abstract class FloreSer {
-        titulo: string
-        coordendor: string
+        private _titulo: string
+        private _coordenador: string
         private _nota: number
 
-
         constructor(
-            Tit: string,
-            Coop: string,
-            No: number
-
+            titulo: string,
+            coordenador: string,
+            nota: number
         ) {
-            this.titulo = Tit
-            this.coordendor = Coop
-            this._nota = No
-
+            this._titulo = titulo
+            this._coordenador = coordenador
+            this._nota = 0
+            this.setNota(nota)
         }
 
+        public getTitulo(): string {
+            return this._titulo
+        }
 
+        public getCoordenador(): string {
+            return this._coordenador
+        }
 
+        public getNota(): number {
+            return this._nota
+        }
 
+        public setNota(nota: number) {
+            if(nota >= 0 && nota <= 10) {
+                this._nota = nota
+            }
+        }
 
+        public identificar(): string {
+        let texto = "Projeto: " + this._titulo
+        texto = texto + " - Coordenador: " + this._coordenador
+        texto = texto + " - Nota: " + this._nota
+
+        return texto
+        }
     }
 
 
+    class ProjetoVerde extends Projeto {
+
+        public identificar(): string {
+        return "Projeto Verde: " + this.getTitulo() + " - Coordenador: " + this.getCoordenador() + " - Nota: " + this.getNota()
+        }
+    }
 
 
+    class ProjetoCultural extends Projeto {
+
+        public identificar(): string {
+        return "Projeto Cultural: " + this.getTitulo() + " - Coordenador: " + this.getCoordenador() + " - Nota: " + this.getNota()
+        }
+    }
 
 
+    let op = ""
+    let tipo: number
+    let titulo: string
+    let coordenador: string
+    let nota: number
+
+    let projetos: Projeto[] = []
+    let somaNotas = 0
+
+    while(op != "N") {
+
+        tipo = Number(prompt("Informe o tipo de projeto: 1-Projeto Verde ou 2-Projeto Cultural"))
+
+        titulo = String(prompt("Informe o título do projeto: "))
+        coordenador = String(prompt("Informe o coordenador: "))
+        nota = Number(prompt("Informe a nota do projeto (0 a 10): "))
+
+        while(nota < 0 || nota > 10) {
+            nota = Number(prompt("Nota inválida! Informe uma nota entre 0 e 10:"))
+        }
+
+        if(tipo == 1) {
+
+            let projeto = new ProjetoVerde(titulo,coordenador,nota)
+
+            projetos.push(projeto)
+            somaNotas += projeto.getNota()
+        }
+
+        else if(tipo == 2) {
+
+            let projeto = new ProjetoCultural(titulo,coordenador,nota)
+
+            projetos.push(projeto)
+            somaNotas += projeto.getNota()
+        }
+
+        op = String(prompt("Deseja cadastrar outro projeto? (S-Sim ou N-Não)")).toUpperCase()
+    }
 
 
+    let media = 0
+
+    if(projetos.length > 0) {
+        media = somaNotas / projetos.length
+    }
 
 
+    window.alert("Média das notas: " + media.toFixed(2))
 
 
+    window.alert("Projetos acima da média:")
 
+    for(let i = projetos.length - 1; i >= 0; i--) {
 
-
-
-
-
-
-
-
-
+        if(projetos[i].getNota() > media) {
+            window.alert(projetos[i].identificar())
+        }
+    }
 }
+

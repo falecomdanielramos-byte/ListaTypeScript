@@ -13,7 +13,6 @@ export function questao05P(): void {
         peso: number
         altura: number
 
-
         constructor(
             N: string,
             I: number,
@@ -26,33 +25,53 @@ export function questao05P(): void {
             this.altura = A
         }
 
-        Envelhecer(NovaAltura: number) {
-            if (idade < 21) {
+        Envelhecer() {
 
-                NovaAltura = altura + 0.5
-                this.altura = NovaAltura
+            this.idade++
+
+            if(this.idade < 21) {
+                this.altura = this.altura + 0.5
             }
         }
-        Engordar() { }
-        Emagrecer() { }
-        Crescer() { }
 
-        Exibir(): void {
-            window.alert(`A pessoa tem | Nome: ${nome} | Idade: ${idade} | Peso: ${peso} | Altura: ${altura}`)
+        Engordar() {
+            this.peso = this.peso + 1
         }
 
+        Emagrecer() {
+            this.peso = this.peso - 1
+        }
+
+        Crescer() {
+            if(this.idade < 21) {
+                this.altura = this.altura + 0.5
+            }
+        }
+
+        Exibir(): void {
+            window.alert(
+                `A pessoa tem | Nome: ${this.nome} | Idade: ${this.idade} | Peso: ${this.peso} | Altura: ${this.altura}`
+            )
+        }
     }
 
 
-    let nome: string, idade: number, peso: number, altura: number
+    let nome: string
+    let idade: number
+    let peso: number
+    let altura: number
 
     nome = String(prompt("Informe o nome da pessoa: "))
     idade = Number(prompt("Informe a idade da pessoa: "))
     peso = Number(prompt("Informe o peso da pessoa: "))
     altura = Number(prompt("Informe a altura da pessoa: "))
 
-    let pessoa = new Pessoa(nome, idade, peso, altura)
+    let pessoa = new Pessoa(
+        nome,
+        idade,
+        peso,
+        altura
+    )
 
     pessoa.Exibir()
-
 }
