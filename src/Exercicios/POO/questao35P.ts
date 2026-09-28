@@ -61,7 +61,7 @@ export function questao35P(): void {
         }
 
         exibirFicha(): void {
-            window.alert(`PRIORIDADE: ${this.getNome()} - ${this._prioridade}`)
+            window.alert(`PRIORIDADE para: ${this.getNome()} - ${this._prioridade}`)
         }
 
         get prioridade(): string {

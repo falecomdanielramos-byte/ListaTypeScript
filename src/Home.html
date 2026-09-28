@@ -7,6 +7,50 @@
 </head>
 
 <style>
+button {
+    background-color: #222;
+    color: rgb(239, 255, 9);
+
+    border: 3px solid #555;
+    border-right: 6px solid #111;
+    border-bottom: 6px solid #111;
+
+    font-size: 15px;
+    padding: 10px 20px;
+
+    image-rendering: pixelated;
+}
+button {
+    background: linear-gradient(135deg, blue 50%, black 50%);
+
+    color: rgb(239, 255, 9);
+
+    border: 3px solid #555;
+    border-right: 6px solid #111;
+    border-bottom: 6px solid #111;
+
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+button {
+    background: linear-gradient(135deg, #0066ff 50%, #000 50%);
+
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 15px;
+
+    border: 3px solid #fff;
+    box-shadow: 6px 6px 0px #000;
+
+    padding: 10px 20px;
+}
+
+button:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0px #000;
+}
 
 body {
     background-color: black;
@@ -16,81 +60,114 @@ h1 {
     color: aqua;
     text-align: center;
 }
+
 h5 {
     color: aqua;
     text-align: center;
 }
 
+.areaBotoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
 button {
     background-color: black;
     color: rgb(239, 255, 9);
-    display:block;
-    margin: 0 auto; 
     font-size: 15px;
     padding: 10px;
 }
 
-
-
-
 </style>
 
-
 <body>
+   
+<div class="areaBotoes">
     <h1>Condicional</h1>
-    <button id="bt1">Questão01</button><br>
-    <button id="bt2">Questão02</button><br>
-    <button id="bt3">Questão03</button><br>
-    <button id="bt4">Questão04</button><br>
+    <button id="bt1C">Questão01</button><br>
+    <button id="bt2C">Questão02</button><br>
+    <button id="bt3C">Questão03</button><br>
+    <button id="bt4C">Questão04</button><br>
+</div>
+
 <hr>
+
+<div class="areaBotoes">
     <h1>Repetição</h1>
-    <button id="bt5">Questão01</button><br>
-    <button id="bt6">Questão02</button><br>
-    <button id="bt7">Questão03</button><br>
-    <button id="bt8">Questão04</button><br>
-    <button id="bt9">Questão05</button><br>
-
+    <button id="bt1R">Questão01</button><br>
+    <button id="bt2R">Questão02</button><br>
+    <button id="bt3R">Questão03</button><br>
+    <button id="bt4R">Questão04</button><br>
+    <button id="bt5R">Questão05</button><br>
+</div>
 
 <hr>
+
+<div class="areaBotoes">
     <h1>Função</h1>
-    <button id="bt10">Questão01</button><br>
-    <button id="bt11">Questão02</button><br>
-    <button id="bt12">Questão03(Console)</button><br>
-    
-<hr>
-    <h1>Array</h1>
-    <button id="bt13">Questão01</button><br>
+    <button id="bt1F">Questão01</button><br>
+    <button id="bt2F">Questão02</button><br>
+    <button id="bt3F">Questão03(Console)</button><br>
+</div> 
 
 <hr>
+<div class="areaBotoes">
+    <h1>Array</h1>
+    <button id="bt1A">Questão01</button><br>
+</div>
+
+<hr>
+
+<div class="areaBotoes">
 
     <h1>POO</h1>
-    <button id="bt23">Questão01</button><br>
-    <button id="bt24">Questão02</button><br>
-    <button id="bt25">Questão03</button><br>
-    <button id="bt26">Questão04</button><br>
-    <button id="bt27">Questão05</button><br>
-    <button id="bt28">Questão06</button><br>
-    <button id="bt29">Questão07</button><br>
-    <button id="bt30">Questão08</button><br>
-    <button id="bt31">Questão09</button><br>
-    <button id="bt32">Questão10</button><br>
-    <button id="bt33">Questão11</button><br>
-    <button id="bt34">Questão12</button><br>
-    <button id="bt35">Questão13</button><br>
-    <button id="bt36">Questão14</button><br>
-    <button id="bt37">Questão15</button><br>
-    <button id="bt38">Questão16</button><br>
-    <button id="bt39">Questão17</button><br>
-    <button id="bt40">Questão18</button><br>
-    <button id="bt41">Questao19</button><br>
-    <button id="bt42">Questão20</button><br>
-    <button id="bt43">Questão21</button><br>
+    <button id="bt1P">Questão01</button><br>
+    <button id="bt2P">Questão02</button><br>
+    <button id="bt3P">Questão03</button><br>
+    <button id="bt4P">Questão04</button><br>
+    <button id="bt5P">Questão05</button><br>
+    <button id="bt6P">Questão06</button><br>
+    <button id="bt7P">Questão07</button><br>
+    <button id="bt8P">Questão08</button><br>
+    <button id="bt9P">Questão09</button><br>
+    <button id="bt10P">Questão10</button><br>
+    <button id="bt11P">Questão11</button><br>
+    <button id="bt12P">Questão12</button><br>
+    <button id="bt13P">Questão13</button><br>
+    <button id="bt14P">Questão14</button><br>
+    <button id="bt15P">Questão15</button><br>
+    <button id="bt16P">Questão16</button><br>
+    <button id="bt17P">Questão17</button><br>
+    <button id="bt18P">Questão18</button><br>
+    <button id="bt19P">Questao19</button><br>
+    <button id="bt20P">Questão20</button><br>
+    <button id="bt21P">Questão21</button><br>
+    <button id="bt22P">Questão22</button><br>
+    <button id="bt23P">Questão23</button><br>
+    <button id="bt24P">Questão24</button><br>
+    <button id="bt25P">Questão25</button><br>
+    <button id="bt26P">Questão26</button><br>
+    <button id="bt27P">Questão27</button><br>
+    <button id="bt28P">Questão28</button><br>
+    <button id="bt29P">Questão29</button><br>
+    <button id="bt30P">Questão30</button><br>
+    <button id="bt31P">Questão31</button><br>
+    <button id="bt32P">Questão32</button><br>
+    <button id="bt33P">Questão33</button><br>
+    <button id="bt34P">Questão34</button><br>
+    <button id="bt35P">Questão35</button><br>
+    <button id="bt36P">Questão36</button><br>
 
-    <button id="bt59">Questão31</button><br>
+</div>
 
 <hr>
+
+<div class="areaBotoes"
     <h5>Atividade Extra</h5>
     <button id="bt01Ex">Questão Extra</button>
+></div>
 
 <hr>
 

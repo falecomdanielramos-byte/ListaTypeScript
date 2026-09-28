@@ -43,9 +43,24 @@ import { questao18P as quest18P } from "./Exercicios/POO/questao18P.js";
 import { questao19P as quest19P } from "./Exercicios/POO/questao19P.js";
 import { questao20P as quest20P } from "./Exercicios/POO/questao20P.js";
 import { questao21P as quest21P } from "./Exercicios/POO/questao21P.js";
-
-
+import { questao22P as quest22P } from "./Exercicios/POO/questao22P.js";
+import { questao23P as quest23P } from "./Exercicios/POO/questao23P.js";
+import { questao24P as quest24P } from "./Exercicios/POO/questao24P.js";
+import { questao25P as quest25P } from "./Exercicios/POO/questao25P.js";
+import { questao26P as quest26P } from "./Exercicios/POO/questao26P.js";
+import { questao27P as quest27P } from "./Exercicios/POO/questao27P.js";
+import { questao28P as quest28P } from "./Exercicios/POO/questao28P.js";
+import { questao29P as quest29P } from "./Exercicios/POO/questao29P.js";
+import { questao30P as quest30P } from "./Exercicios/POO/questao30P.js";
 import { questao31P as quest31P } from "./Exercicios/POO/questao31P.js";
+import { questao32P as quest32P } from "./Exercicios/POO/questao32P.js";
+import { questao33P as quest33P } from "./Exercicios/POO/questao33P.js";
+import { questao34P as quest34P } from "./Exercicios/POO/questao34P.js";
+import { questao35P as quest35P } from "./Exercicios/POO/questao35P.js";
+import { questao36P as quest36P } from "./Exercicios/POO/questao36P.js";
+
+
+
 
 
 //Extra
@@ -54,50 +69,63 @@ import { attEx } from "./Exercicios/attEx.js";
 
 
 // Condicional
-document.getElementById("bt1")?.addEventListener("click", quest1 )
-document.getElementById("bt2")?.addEventListener("click", quest2 )
-document.getElementById("bt3")?.addEventListener("click", quest3 )
-document.getElementById("bt4")?.addEventListener("click", quest4 )
+document.getElementById("bt1C")?.addEventListener("click", quest1 )
+document.getElementById("bt2C")?.addEventListener("click", quest2 )
+document.getElementById("bt3C")?.addEventListener("click", quest3 )
+document.getElementById("bt4C")?.addEventListener("click", quest4 )
 
 // Repetição
-document.getElementById("bt5")?.addEventListener("click", quest1R )
-document.getElementById("bt6")?.addEventListener("click", quest2R )
-document.getElementById("bt7")?.addEventListener("click", quest3R )
-document.getElementById("bt8")?.addEventListener("click", quest4R )
-document.getElementById("bt9")?.addEventListener("click", quest5R )
+document.getElementById("bt1R")?.addEventListener("click", quest1R )
+document.getElementById("bt2R")?.addEventListener("click", quest2R )
+document.getElementById("bt3R")?.addEventListener("click", quest3R )
+document.getElementById("bt4R")?.addEventListener("click", quest4R )
+document.getElementById("bt5R")?.addEventListener("click", quest5R )
 
 //Funçâo
-document.getElementById("bt10")?.addEventListener("click", quest1F )
-document.getElementById("bt11")?.addEventListener("click", quest2F )
-document.getElementById("bt12")?.addEventListener("click", quest3F )
+document.getElementById("bt1R")?.addEventListener("click", quest1F )
+document.getElementById("bT2R")?.addEventListener("click", quest2F )
+document.getElementById("bt3R")?.addEventListener("click", quest3F )
 
 //Array
-document.getElementById("bt13")?.addEventListener("click", quest1A )
+document.getElementById("bt1A")?.addEventListener("click", quest1A )
 
 //POO
-document.getElementById("bt23")?.addEventListener("click",quest1P)
-document.getElementById("bt24")?.addEventListener("click",quest2P)
-document.getElementById("bt25")?.addEventListener("click",quest3P)
-document.getElementById("bt26")?.addEventListener("click",quest4P)
-document.getElementById("bt27")?.addEventListener("click",quest5P)
-document.getElementById("bt28")?.addEventListener("click",quest6P)
-document.getElementById("bt29")?.addEventListener("click",quest7P)
-document.getElementById("bt30")?.addEventListener("click",quest8P)
-document.getElementById("bt31")?.addEventListener("click",quest9P)
-document.getElementById("bt32")?.addEventListener("click",quest10P)
-document.getElementById("bt33")?.addEventListener("click",quest11P)
-document.getElementById("bt34")?.addEventListener("click",quest12P)
-document.getElementById("bt35")?.addEventListener("click",quest13P)
-document.getElementById("bt36")?.addEventListener("click",quest14P)
-document.getElementById("bt37")?.addEventListener("click",quest15P)
-document.getElementById("bt38")?.addEventListener("click",quest16P)
-document.getElementById("bt39")?.addEventListener("click",quest17P)
-document.getElementById("bt40")?.addEventListener("click",quest18P)
-document.getElementById("bt41")?.addEventListener("click",quest19P)
-document.getElementById("bt42")?.addEventListener("click",quest20P)
-document.getElementById("bt43")?.addEventListener("click",quest21P)
-
-document.getElementById("bt59")?.addEventListener("click",quest31P)
+document.getElementById("bt1P")?.addEventListener("click",quest1P)
+document.getElementById("bt2P")?.addEventListener("click",quest2P)
+document.getElementById("bt3P")?.addEventListener("click",quest3P)
+document.getElementById("bt4P")?.addEventListener("click",quest4P)
+document.getElementById("bt5P")?.addEventListener("click",quest5P)
+document.getElementById("bt6P")?.addEventListener("click",quest6P)
+document.getElementById("bt7P")?.addEventListener("click",quest7P)
+document.getElementById("bt8P")?.addEventListener("click",quest8P)
+document.getElementById("bt9P")?.addEventListener("click",quest9P)
+document.getElementById("bt10P")?.addEventListener("click",quest10P)
+document.getElementById("bt11P")?.addEventListener("click",quest11P)
+document.getElementById("bt12P")?.addEventListener("click",quest12P)
+document.getElementById("bt13P")?.addEventListener("click",quest13P)
+document.getElementById("bt14P")?.addEventListener("click",quest14P)
+document.getElementById("bt15P")?.addEventListener("click",quest15P)
+document.getElementById("bt16P")?.addEventListener("click",quest16P)
+document.getElementById("bt17P")?.addEventListener("click",quest17P)
+document.getElementById("bt18P")?.addEventListener("click",quest18P)
+document.getElementById("bt19P")?.addEventListener("click",quest19P)
+document.getElementById("bt20P")?.addEventListener("click",quest20P)
+document.getElementById("bt21P")?.addEventListener("click",quest21P)
+document.getElementById("bt22P")?.addEventListener("click",quest22P)
+document.getElementById("bt23P")?.addEventListener("click",quest23P)
+document.getElementById("bt24P")?.addEventListener("click",quest24P)
+document.getElementById("bt25P")?.addEventListener("click",quest25P)
+document.getElementById("bt26P")?.addEventListener("click",quest26P)
+document.getElementById("bt27P")?.addEventListener("click",quest27P)
+document.getElementById("bt28P")?.addEventListener("click",quest28P)
+document.getElementById("bt29P")?.addEventListener("click",quest29P)
+document.getElementById("bt30P")?.addEventListener("click",quest30P)
+document.getElementById("bt31P")?.addEventListener("click",quest31P)
+document.getElementById("bt32P")?.addEventListener("click",quest32P)
+document.getElementById("bt33P")?.addEventListener("click",quest33P)
+document.getElementById("bt34P")?.addEventListener("click",quest34P)
+document.getElementById("bt35P")?.addEventListener("click",quest35P)
+document.getElementById("bt36P")?.addEventListener("click",quest36P)
 
 
 //Questão extra
