@@ -89,17 +89,11 @@ export function questao35P(): void {
 
     while(continuar != "N") {
 
-        op = Number(prompt(
-            "Informe o tipo de paciente: 1-Comum ou 2-Prioritário"
-        ))
+        op = Number(prompt("Informe o tipo de paciente: 1-Comum ou 2-Prioritário"))
 
-        nome = String(prompt(
-            "Informe o nome do paciente: "
-        ))
+        nome = String(prompt("Informe o nome do paciente: "))
 
-        cartaoSUS = Number(prompt(
-            "Informe o número do cartão do SUS: "
-        ))
+        cartaoSUS = Number(prompt("Informe o número do cartão do SUS: "))
 
 
         if(op == 1) {
@@ -111,9 +105,7 @@ export function questao35P(): void {
 
         else if(op == 2) {
 
-            let prioridade = String(prompt(
-                "Informe o tipo de prioridade: "
-            ))
+            let prioridade = String(prompt("Informe o tipo de prioridade: "))
 
             pacientePrioritario = new PacientePrioritario(nome, cartaoSUS, prioridade)
 
@@ -123,9 +115,7 @@ export function questao35P(): void {
         }
 
 
-        continuar = String(prompt(
-            "Deseja cadastrar outro paciente? (S-Sim ou N-Não)"
-        )).toUpperCase()
+        continuar = String(prompt("Deseja cadastrar outro paciente? (S-Sim ou N-Não)")).toUpperCase()
     }
 
 
