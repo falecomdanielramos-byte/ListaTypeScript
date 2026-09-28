@@ -81,7 +81,7 @@ export function questao33P(): void {
     let totalMultas = 0
 
 
-    while(continuar != "N") {
+    while (continuar != "N") {
 
         op = Number(prompt(
             "Informe o tipo da obra: 1-Livro Físico ou 2-Artigo Digital"
@@ -100,7 +100,7 @@ export function questao33P(): void {
         ))
 
 
-        if(op == 1) {
+        if (op == 1) {
 
             livro = new LivroFisico(
                 titulo,
@@ -110,7 +110,7 @@ export function questao33P(): void {
             obras.push(livro)
         }
 
-        else if(op == 2) {
+        else if (op == 2) {
 
             artigo = new ArtigoDigital(
                 titulo,
@@ -126,9 +126,9 @@ export function questao33P(): void {
         )).toUpperCase()
 
 
-        if(continuar == "N") {
+        if (continuar == "N") {
 
-            for(let obra of obras) {
+            for (let obra of obras) {
 
                 let multa = obra.registrarAtraso(dias)
 
