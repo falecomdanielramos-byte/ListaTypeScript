@@ -117,11 +117,7 @@ export function questao17P(): void {
 
             let curso = String(prompt("Informe o curso do aluno: "))
 
-            aluno = new Aluno(
-                id,
-                nome,
-                curso
-            )
+            aluno = new Aluno(id,nome,curso)
 
             historico.push(aluno)
 
@@ -132,11 +128,7 @@ export function questao17P(): void {
 
             let departamento = String(prompt("Informe o departamento do servidor: "))
 
-            servidor = new Servidor(
-                id,
-                nome,
-                departamento
-            )
+            servidor = new Servidor(id,nome,departamento)
 
             historico.push(servidor)
 

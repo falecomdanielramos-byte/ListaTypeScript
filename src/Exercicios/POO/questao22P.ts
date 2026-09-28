@@ -17,11 +17,11 @@ export function questao22P(): void {
         private _quilometragem: number
 
         constructor(
-            placa: string,
-            quilometragem: number
+            Pl: string,
+            Quilme: number
         ) {
-            this._placa = placa
-            this._quilometragem = quilometragem
+            this._placa = Pl
+            this._quilometragem = Quilme
         }
 
         public getPlaca(): string {

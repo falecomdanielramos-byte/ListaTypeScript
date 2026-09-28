@@ -17,11 +17,11 @@ export function questao27P(): void {
         private _descricao: string
 
         constructor(
-            tombamento: number,
-            descricao: string
+            tomb: number,
+            descri: string
         ) {
-            this._tombamento = tombamento
-            this._descricao = descricao
+            this._tombamento = tomb
+            this._descricao = descri
         }
 
         public getTombamento(): number {

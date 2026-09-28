@@ -17,11 +17,11 @@ export function questao19P(): void {
         private _leitura: number
 
         constructor(
-            codigo: number,
-            leitura: number
+            cod: number,
+            lei: number
         ) {
-            this._codigo = codigo
-            this._leitura = leitura
+            this._codigo = cod
+            this._leitura = lei
         }
 
         public getCodigo(): number {
@@ -90,10 +90,7 @@ export function questao19P(): void {
 
         else if(tipo == 2) {
 
-            let sensorPressao = new SensorPressao(
-                codigo,
-                leitura
-            )
+            let sensorPressao = new SensorPressao(codigo,leitura)
 
             sensores.push(sensorPressao)
         }

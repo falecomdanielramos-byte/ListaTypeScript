@@ -16,11 +16,11 @@ export function questao26P(): void {
         private _saldo: number
 
         constructor(
-            titular: string,
-            saldo: number
+            titLar: string,
+            sal: number
         ) {
-            this._titular = titular
-            this._saldo = saldo
+            this._titular = titLar
+            this._saldo = sal
         }
 
         public getTitular(): string {

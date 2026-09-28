@@ -16,13 +16,13 @@ export function questao23P(): void {
         private _precoCusto: number
 
         constructor(
-            codigo: number,
+            cod: number,
             nome: string,
-            precoCusto: number
+            preCust: number
         ) {
-            this._codigo = codigo
+            this._codigo = cod
             this._nome = nome
-            this._precoCusto = precoCusto
+            this._precoCusto = preCust
         }
 
         public getCodigo(): number {

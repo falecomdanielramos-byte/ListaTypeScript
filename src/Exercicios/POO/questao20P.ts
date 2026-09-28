@@ -18,10 +18,10 @@ class Pedido {
 
     constructor(
         mesa: number,
-        valorIngredientes: number
+        valorIngri: number
     ) {
         this._mesa = mesa
-        this._valorIngredientes = valorIngredientes
+        this._valorIngredientes = valorIngri
     }
 
     public getMesa(): number {

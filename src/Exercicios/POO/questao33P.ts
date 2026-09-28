@@ -20,11 +20,11 @@ export function questao33P(): void {
         private _autor: string
 
         constructor(
-            titulo: string,
-            autor: string
+            Tit: string,
+            Aut: string
         ) {
-            this._titulo = titulo
-            this._autor = autor
+            this._titulo = Tit
+            this._autor = Aut
         }
 
         public getTitulo(): string {

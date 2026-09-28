@@ -23,12 +23,12 @@ export function questao31P(): void {
         private _nota: number
 
         constructor(
-            titulo: string,
-            coordenador: string,
+            Titlo: string,
+            coord: string,
             nota: number
         ) {
-            this._titulo = titulo
-            this._coordenador = coordenador
+            this._titulo = Titlo
+            this._coordenador = coord
             this._nota = 0
             this.setNota(nota)
         }
